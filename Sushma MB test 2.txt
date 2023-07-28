@@ -1,0 +1,92 @@
+1.Methood Overloading:method Overloading means the method having the same class name but different parameters is called Method overloading.
+Example:
+class PersonName{
+ 
+	 static void person(String name)
+	 System.out.println("name of the person");
+	 static void person(int age,String fatherName)
+         System.out.println("age of the person && father name of person);
+ 
+}
+public static void main(String[] args){
+personName.person("sushma");
+personName.person(18,"abc");
+}
+2.Variable:variable are access to store the values while java program being executing.
+variables are store the values.
+there are 4 types of variable
+1.local Variable:the variable are declared in with in the method.and there is no static keyword.
+2.Instance Variable:the variable are declared the within the class but outside the body of the method is called instance variable.
+3.Static Variable:the variable declared the inside the class but outside the method is called static variable.they used in the static keyword.there is a one static variable we can copy and share all the instance of the class.
+4.parameter variable:they used inside the parenthesis.
+Ex:
+class Varible{
+int a=20;//instance variable
+static int b=10;//static variable
+public static void main(String[] args){
+int c=30;//local variable
+
+(String[] args)//parameter variable
+c=a+b;
+a=obj;
+Obj obj=new Obj();//we instialise the instance variable we can use object.
+}
+}
+3.Heap is the memory allocation of the method inside the heap there is a stack and that stack creates a stack frame.
+ Heap it is having the programming files.stack will contain a programes and check by line by line.
+In the stack there is stack frame they check and initialise the program line and allocate the memory.
+there are three phases methaphase,constant pole,instance pole.
+4.contructor overloading:constructor overloading means having the constructor having the same class name but different parameter. 
+ class Fridge{
+static void item(String name)
+System.out.println("invoking String const arguments);
+this.name=name;
+static void item(String name,int price);
+this("name",price);
+System.out.println("invokin String and int const arguments);
+}
+public static void main(String[] item){
+Fridge.item("Carrot");
+Fridge.item("Carrot",20);
+}
+5.method overloading:method overloading means having the method have same class name but different parameter is called method overloading
+class Emails{
+System.out.println("invoking the emails");
+String name(int noOfEmails)
+System.out.println("invoking the noOfEmails:"+noOfEmails);
+String name(String personName,int noOfActivity)
+System.out.println("invoking personName:"+personName"+noOfActivity":+noOfActivity);
+}
+public static void main(String[] args){
+Emails.name(3);
+Emails.name("abc",5);
+}
+6.class Tv{
+Static void info(String name)
+System.out.println("invoking name of tv");
+static void info(String brand,String colour)
+System.out.println("invoking brand and colour in tv");
+}
+public static void main(String[] args){
+System.out.println("invoking main in Tv")
+Tv.info("lenova");
+Tv.info("abc","White");
+}
+7.Constructor chaining:constructor chaining means calling the one constructor to the another constructor is called constructor chaining.
+class park{
+static void info(String name){
+this.name=name;
+System.out.println("invoking String const arguments");}
+static void info(String name,String nature){
+this("name","nature");
+System.out.println("invoking String and String arguments");}
+}
+public static void main(String[] args){
+Tv tv=new Tv();
+Tv tv1=new Tv("Maharaja","Greenary");
+}
+
+
+
+
+
